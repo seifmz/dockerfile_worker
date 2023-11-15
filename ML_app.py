@@ -22,5 +22,5 @@ def run_model():
     probabilities_list=probabilities.tolist()[0]
     return jsonify({"input_text":input_text,"probabilities":probabilities_list})
 
-if  __name__=='_main_':
+if  __name__=='__main__':
     app.run(host='0.0.0.0',port=5000)
